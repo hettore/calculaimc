@@ -24,7 +24,7 @@ public class Main {
 		} else if (imc <= 24.9) {
 			System.out.printf("Você está com o peso normal e o resultado é %.1f%n", imc);
 		} else if (imc <= 29.9) {
-			System.out.printf("Você está com sobrepes, e o resultado é %.1f%n", imc);
+			System.out.printf("Você está com sobrepeso e o resultado é %.1f%n", imc);
 		} else if (imc <= 34.9) {
 			System.out.printf("Você está com obesidade grau 1 e o resultado é %.1f%n", imc);
 		} else if (imc <= 39.9) {
