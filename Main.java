@@ -1,14 +1,18 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-
+		
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
 		double altura, peso, imc;
 
+		System.out.println("Por favor insira sua altura: ");
 		altura = sc.nextDouble();
+		System.out.println("Por favor insira seu peso: ");
 		peso = sc.nextDouble();
 
 		// imc = 40.1; usado para testes.
@@ -16,19 +20,19 @@ public class Main {
 		imc = peso / (altura * altura);
 
 		if (imc < 18.5) {
-			System.out.printf("Você está abaixo do peso, e o resultado é %.1f%n", imc);
+			System.out.printf("Você está abaixo do peso e o resultado é %.1f%n", imc);
 		} else if (imc <= 24.9) {
-			System.out.printf("Você está com o peso normal, e o resultado é %.1f%n", imc);
+			System.out.printf("Você está com o peso normal e o resultado é %.1f%n", imc);
 		} else if (imc <= 29.9) {
-			System.out.printf("Você está com sobrepeso, e o resultado é %.1f%n", imc);
+			System.out.printf("Você está com sobrepes, e o resultado é %.1f%n", imc);
 		} else if (imc <= 34.9) {
-			System.out.printf("Você está com obesidade grau 1, e o resultado é %.1f%n", imc);
+			System.out.printf("Você está com obesidade grau 1 e o resultado é %.1f%n", imc);
 		} else if (imc <= 39.9) {
-			System.out.printf("Você está com obesidade grau 2, e o resultado é %.1f%n", imc);
+			System.out.printf("Você está com obesidade grau 2 e o resultado é %.1f%n", imc);
 		} else if (imc >= 40) {
-			System.out.printf("Você está com obesidade grau 3, e o resultado é %.1f%n", imc);
+			System.out.printf("Você está com obesidade grau 3 e o resultado é %.1f%n", imc);
 		} else {
-			System.out.println("Valores fora do calculo");
+			System.out.println("Valores fora do cálculo");
 		}
 
 		sc.close();
