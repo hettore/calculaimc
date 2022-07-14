@@ -1,6 +1,9 @@
 # CalculaIMC
 Calculadora de IMC (Índice de massa corporea). 
 
+Dica para usabilidade:
+Use . ao invés de , para inserir sua altura ou peso.
+
 #### Projeto em Java, é necessário ter o Java instalado e uma IDE para rodar o projeto pelo console.
 
 -Resumidamente o IMC é usado para detectar casos de obesidade ou desnutrição, <br>
